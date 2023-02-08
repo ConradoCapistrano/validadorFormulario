@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+</head> 
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="assets/image/bg1.png" alt="" />
+        </div>
+        <div class="rightside">
+            <h1>Get Started</h1>
+
+            <form method="POST" action="SignUp.php" class="validatorClass">
+                <label>
+                    User Name:<br/>
+                    <input type="text" name="name" data-rules="required|min=2" />
+                </label>
+                <label>
+                    E-mail:<br/>
+                    <input type="email" name="email" data-rules="required" />
+                </label>
+                <label>
+                    Password:<br/>
+                    <input type="password" name="password" data-rules="min=4" />
+                </label>
+                <label>
+                    <input type="submit" value="Submit" />
+                </label>
+            </form>
+
+            <div>
+                Already Have an Account? <a href="">Sign In</a>
+            </div>
+
+            <div class="footer_copyright">
+                &copy; 2023 Template JS, by <a href="mailto:capistrano.conrado@gmail.com">Conrado Capistrano</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
